@@ -120,11 +120,11 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@angular/animations@7.0.0-beta.1
+@angular/animations@7.0.0-beta.3
 MIT
 MIT
 
-@angular/cdk@6.4.5-7e74b5d
+@angular/cdk@6.4.6-29d5173
 MIT
 The MIT License
 
@@ -168,7 +168,7 @@ MIT
 MIT
 MIT
 
-@angular/material@6.4.5-7e74b5d
+@angular/material@6.4.6-29d5173
 MIT
 The MIT License
 

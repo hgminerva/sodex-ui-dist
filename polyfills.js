@@ -5473,7 +5473,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Innosoft\Software Development\Projects\Sodex\sodex\src\polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! D:\Innosoft\Software Development\Projects\SodexV2\sodex-ui-v2\src\polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })
