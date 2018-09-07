@@ -3804,40 +3804,60 @@ var UsersService = /** @class */ (function () {
             _this.registerUserSource.next(responseResults);
         }, function (error) {
             var errorResults = ["failed"];
-            var fullnameErrors = error.json().ModelState["model.FullName"];
-            if (fullnameErrors.length > 0) {
-                for (var i = 0; i < fullnameErrors.length; i++) {
-                    errorResults.push(fullnameErrors[i]);
+            if (error.json().ModelState[""] != undefined || error.json().ModelState[""] != null) {
+                var errorMessage = error.json().ModelState[""];
+                if (errorMessage.length > 0) {
+                    for (var i = 0; i < errorMessage.length; i++) {
+                        errorResults.push(errorMessage[i]);
+                    }
                 }
             }
-            var addressErrors = error.json().ModelState["model.Address"];
-            if (addressErrors.length > 0) {
-                for (var i = 0; i < addressErrors.length; i++) {
-                    errorResults.push(addressErrors[i]);
+            if (error.json().ModelState["model.FullName"] != undefined || error.json().ModelState["model.FullName"] != null) {
+                var fullnameErrors = error.json().ModelState["model.FullName"];
+                if (fullnameErrors.length > 0) {
+                    for (var i = 0; i < fullnameErrors.length; i++) {
+                        errorResults.push(fullnameErrors[i]);
+                    }
                 }
             }
-            var contactNumberErrors = error.json().ModelState["model.ContactNumber"];
-            if (contactNumberErrors.length > 0) {
-                for (var i = 0; i < contactNumberErrors.length; i++) {
-                    errorResults.push(contactNumberErrors[i]);
+            if (error.json().ModelState["model.Address"] != undefined || error.json().ModelState["model.FullName"] != null) {
+                var addressErrors = error.json().ModelState["model.Address"];
+                if (addressErrors.length > 0) {
+                    for (var i = 0; i < addressErrors.length; i++) {
+                        errorResults.push(addressErrors[i]);
+                    }
                 }
             }
-            var emailErrors = error.json().ModelState["model.Email"];
-            if (emailErrors.length > 0) {
-                for (var i = 0; i < emailErrors.length; i++) {
-                    errorResults.push(emailErrors[i]);
+            if (error.json().ModelState["model.ContactNumber"] != undefined || error.json().ModelState["model.FullName"] != null) {
+                var contactNumberErrors = error.json().ModelState["model.ContactNumber"];
+                if (contactNumberErrors.length > 0) {
+                    for (var i = 0; i < contactNumberErrors.length; i++) {
+                        errorResults.push(contactNumberErrors[i]);
+                    }
                 }
             }
-            var passwordErrors = error.json().ModelState["model.Password"];
-            if (passwordErrors.length > 0) {
-                for (var i = 0; i < passwordErrors.length; i++) {
-                    errorResults.push(passwordErrors[i]);
+            if (error.json().ModelState["model.Email"] != undefined || error.json().ModelState["model.FullName"] != null) {
+                var emailErrors = error.json().ModelState["model.Email"];
+                if (emailErrors.length > 0) {
+                    for (var i = 0; i < emailErrors.length; i++) {
+                        errorResults.push(emailErrors[i]);
+                    }
                 }
             }
-            var usernameErrors = error.json().ModelState["model.UserName"];
-            if (usernameErrors.length > 0) {
-                for (var i = 0; i < usernameErrors.length; i++) {
-                    errorResults.push(usernameErrors[i]);
+            if (error.json().ModelState["model.UserName"] != undefined || error.json().ModelState["model.FullName"] != null) {
+                var usernameErrors = error.json().ModelState["model.UserName"];
+                if (usernameErrors.length > 0) {
+                    for (var i = 0; i < usernameErrors.length; i++) {
+                        errorResults.push(usernameErrors[i]);
+                    }
+                }
+            }
+            if (error.json().ModelState["model.Password"] != undefined || error.json().ModelState["model.FullName"] != null) {
+                var passwordErrors = error.json().ModelState["model.Password"];
+                if (passwordErrors.length > 0) {
+                    for (var i = 0; i < passwordErrors.length; i++) {
+                        errorResults.push(passwordErrors[i]);
+                    }
                 }
             }
             _this.registerUserSource.next(errorResults);
