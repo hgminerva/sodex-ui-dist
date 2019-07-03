@@ -2898,9 +2898,9 @@ var TransferComponent = /** @class */ (function () {
                     _this.toastr.success("Card details successfully loaded.");
                     _this.isCardDetailLoaded = true;
                     _this.isBtnTransferDisable = false;
-                    if (_this.canTransfer) {
-                        _this.openTransferModal(_this.trasnferModalTemplate);
-                    }
+                    // if (this.canTransfer) {
+                    //   this.openTransferModal(this.trasnferModalTemplate);
+                    // }
                 }
                 else {
                     _this.toastr.error("No card details for this card number.");
