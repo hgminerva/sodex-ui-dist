@@ -322,8 +322,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppSettings", function() { return AppSettings; });
 var AppSettings = /** @class */ (function () {
     function AppSettings() {
-        this.defaultAPIURLHost = "http://localhost:2650";
-        // public defaultAPIURLHost: string = "http://api.sodex.io";
+        // public defaultAPIURLHost: string = "http://localhost:2650";
+        this.defaultAPIURLHost = "http://api.sodex.io";
     }
     return AppSettings;
 }());
