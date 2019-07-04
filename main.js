@@ -2921,6 +2921,9 @@ var TransferComponent = /** @class */ (function () {
                     _this.toastr.success("Card details successfully loaded.");
                     _this.isCardDetailLoaded = true;
                     _this.isBtnTransferDisable = false;
+                    setTimeout(function () {
+                        _this.selectCNField();
+                    }, 100);
                     // if (this.canTransfer) {
                     //   this.openTransferModal(this.trasnferModalTemplate);
                     // }
@@ -2937,6 +2940,9 @@ var TransferComponent = /** @class */ (function () {
                     _this.card.Status = "";
                     _this.isCardDetailLoaded = false;
                     _this.isBtnTransferDisable = false;
+                    setTimeout(function () {
+                        _this.selectCNField();
+                    }, 100);
                 }
                 if (_this.getCardSubscription != null)
                     _this.getCardSubscription.unsubscribe();
